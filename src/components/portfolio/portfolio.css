@@ -1,0 +1,110 @@
+.portfolio{
+    background-color: #0e0e0e;
+    height: auto; /* Set height to auto to allow scroll */
+    overflow-y: auto; /* Add vertical scroll when content overflows */
+    padding: 2rem;
+
+}
+
+.portfolio h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+.portfolio h5 {
+    color: #55534c;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+.portfolio__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.portfolio_item{
+    background: #fff;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.portfolio_item:hover{
+    border-color: var(--color-primary);
+    background: transparent;
+    border-width: 1px;
+}
+
+.portfolio_item h3{
+    margin: 1rem;
+    border-color: var(--color-primary);
+    background: transparent;
+    border-width: 1px;
+}
+
+.portfolio_item:hover h3 {
+    color: #fff;
+}
+
+.portfolio_item:hover p {
+    color: #fff;
+}
+
+.portfolio__item-image{
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.portfolio_item h3 {
+    margin: 1.2rem 0 2rem;
+    color: #0e0e0e;
+}
+
+
+.portfolio_item p {
+    font-size: 0.9rem;
+    color: #0e0e0e;
+    padding: 0.1rem;
+
+}
+
+.portfolio__item-cta {
+    display: flex;
+    gap: 1rem;
+    bottom: 1rem;
+}
+
+/* ============ MEDIA QUERIES (MID DEVICES)========== */
+@media screen and (max-width: 1024px) {
+    .portfolio__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+
+    .portfolio h2{
+        font-size: medium;
+    }
+}
+
+
+
+/* ============ MEDIA QUERIES (small DEVICES)========== */
+@media screen and (max-width: 600px) {
+    .portfolio__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .portfolio {
+        font-size: small;
+        padding: 2rem;
+        height: auto; /* Set height to auto to allow scroll */
+        overflow-y: auto; /* Add vertical scroll when content overflows */
+      }
+      .portfolio h5{
+        font-size: medium;
+      }
+      
+}
+

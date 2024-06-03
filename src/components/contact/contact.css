@@ -1,0 +1,177 @@
+.contact{
+background-color: rgb(31, 30, 30);
+background-size: cover;
+background-position: center;
+position: relative;
+overflow: hidden;
+height: 100vh; /* Adjust the height as needed */
+padding-top: 2rem;
+}
+.contact h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+.glow {
+    font-size: 30px;
+    font-weight: 400;
+    /* transform: rotateX(0) rotateY(-25deg); */
+    width: 500px;
+    text-align: center;
+    color: #718da5;
+    color: #000000;
+    margin: 1rem auto;
+    position: relative;
+    text-shadow: 0 0 9px #fff,0 0 10px #fff,0 0 15px #228dff,0 0 20px #228dff,0 0 35px #fff,0 0 40px #fff;
+}
+
+.contact__option h3{
+    font-size: smaller;
+}
+
+.container.container__contact {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+
+
+}
+
+.contact__options {
+    -aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact__option {
+    
+    background: var(--color-primary);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    align-items: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.contact__option:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.contact__option h4 {
+    font-size: medium;
+    margin-bottom: 0.5rem;
+    align-self: center;
+}
+
+.contact__option a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #000;
+}
+
+.contact__option a:hover {
+    color: white;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    
+}
+
+input, textarea {
+    width: 100%;
+    padding: 2rem 2rem 2rem 2rem; /* top right bottom left */
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary);
+    resize: none;
+}
+
+.text {
+    padding: 1rem;
+}
+
+/* ============ MEDIA QUERIES (MID DEVICES)========== */
+@media screen and (max-width: 1024px) {
+    .container.container__contact {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .contact h2{
+        font-size: medium;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        height:70%;
+    }
+
+    .contact__options {
+        
+        -aspect-ratio: 1/1;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .contact__option h4{
+        position: left;
+        font-size: small;
+        margin:2px;
+        padding:1px;
+        align-self: left;
+    }
+    .contact__option h3{
+        position: right;
+        font-size: small;
+        margin:2px;
+        padding:1px;
+        align-self: right;
+
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 1rem 1rem 1rem 1rem; /* top right bottom left */
+        border-radius: 0.5rem;
+        background: transparent;
+        border: 2px solid var(--color-primary);
+        resize: none;
+    }
+}
+
+
+/* ============ MEDIA QUERIES (small DEVICES)========== */
+@media screen and (max-width: 600px) {
+    .container.container__contact {
+        grid-template-columns: 1fr;
+        overflow-y: auto;
+        width: 90vw;
+        height: auto;
+
+    }
+    .contact__option h4, h3{
+        font-size: small;
+        margin:1px;
+        padding: 2px;
+    }
+
+    .contact__options{
+        display: flex-left;
+
+    }
+
+    .contact {
+        overflow-y: auto;
+        height: 100vh;
+    }
+}

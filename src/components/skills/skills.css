@@ -1,0 +1,166 @@
+.skills h5{
+  color: #55534c;
+  padding-top: 1rem;
+  margin: 1rem;
+  font-size:30px;
+  font-weight: 400;
+}
+.skills h2{
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.skills__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  max-height: 50%;
+}
+
+
+.skills__category {
+  background-color: #0e0e0e;
+  width: calc(75% - 10rem);
+  margin: 0.2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  color: white;
+  display: flex;
+  grid-template-columns: repeat(2 1fr);
+  flex-direction: column;
+  transition: background-color 0.3s;
+  font-size: medium;
+  font-weight: 200;
+  padding: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  
+}
+
+#skills > h2:nth-child(2) {
+  margin-bottom: 0;
+}
+
+
+.skills__category-title {
+  margin: 1rem;
+  text-align: center;
+  font-size: 1.2rem; 
+}
+
+.skills__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem; 
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 0.9rem; 
+}
+
+.skills__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0rem;
+  padding: 0.2rem;
+
+  /* border-bottom: 1px solid #333; */
+
+}
+
+
+.skills__icon {
+  color: var(--primary-color);
+  font-size: 0.9rem; 
+}
+
+.skills__skill {
+  margin: 0;
+  font-size: 0.9rem; 
+  
+}
+
+.skills__level {
+  margin: 0;
+  font-size: 0.9rem;
+  width: 6rem;
+  height: auto;
+  text-align: right; 
+}
+
+.skills__category:hover {
+  background-color: #000;
+  border: 1px solid #55534c; /* Use "solid" or another valid border style */
+}
+
+
+@media (max-width: 48rem) {
+  .skills__category {
+    width: 100%; 
+    margin: 0.5rem 0; 
+    font-size: small;
+  }
+  .skills__container {
+    width: 100%; 
+}
+}
+
+
+/* ============ MEDIA QUERIES (MID DEVICES)========== */
+
+@media screen and (max-width: 1024px) {
+  .skills{
+    overflow-y: auto; /* Add vertical scroll when content overflows */
+    font-size: small;
+  }
+
+  .skills h2{
+    font-size: medium;
+
+  }
+
+  
+}
+
+
+
+/* ============ MEDIA QUERIES (small DEVICES)========== */
+@media screen and (max-width: 600px) {
+  .skills__category {
+    width: 100%;
+    margin: 0.5rem 0;
+    font-size: small;
+  }
+  .skills__container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: small;
+  }
+
+  .skills {
+    margin: 1rem;
+    height: auto; /* Set height to auto to allow scroll */
+    overflow-y: auto; /* Add vertical scroll when content overflows */
+    font-size: small;
+  }
+  .skills h5{
+    font-size: medium;
+
+  }
+
+
+  .skills__content{
+    padding: 0.5rem;
+    margin: 0;
+    font-size:small;
+  }
+
+  .skills__icon {
+    font-size: 1rem;
+  }
+}

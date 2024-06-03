@@ -1,0 +1,117 @@
+.nav {
+    background: #c9858580;
+    width: max-content;
+    position: fixed;
+    top: 2rem;
+    right: 1rem;
+    z-index: 1000;
+    padding: 0.3rem 1.7rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 1rem;
+    -webkit-transition: backgroundc-color 0.3s;
+    text-decoration-color: black;
+    font-weight: 500;
+    font-size: 100px;
+
+}
+
+.nav a {
+    background: transparent;
+    padding: 0.7rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-black);
+    font-size: 1.25rem;
+}
+
+.nav a:hover {
+    background: #492929;
+    color: #fff;
+    border-radius: 10%;
+    margin: 0.1rem;
+    font-weight: 300;
+}
+
+.nav a:active {
+    background: #c9858580;
+    color: #9d9f9d;
+}
+
+.nav.top {
+    padding: 0.1rem 1.7rem;
+
+}
+
+.nav.top:hover {
+    background: rgba(85, 83, 76, 0.4);
+}
+
+
+
+
+
+
+/* ============ MEDIA QUERIES (MID DEVICES) ========== */
+@media screen and (max-width: 1024px) {}
+
+/* ============ MEDIA QUERIES (small DEVICES) ========== */
+/* ============ MEDIA QUERIES (small DEVICES) ========== */
+@media screen and (max-width: 600px) {
+    .nav {
+        /* Hide the original navigation bar on small devices */
+        display: none;
+    }
+
+    .nav-button {
+        background: rgba(255, 252, 241, 0.5);
+        padding: 0.3rem 0.7rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        display: flex; /* Display the button */
+        position: right-top;
+    }
+
+    .nav-button.active {
+        background: #49453e;
+        color: #fff;
+        
+    }
+
+    .nav-dropdown {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 2.5rem;
+        right: 2rem; /* Adjust position as needed */
+        z-index: 1000;
+        border-radius: 1rem;
+        padding: 0.3rem 1.7rem;
+        transition: background 0.3s;
+    }
+
+    .nav-dropdown.active {
+        display: flex;
+    }
+
+    /* Add styles for dropdown links */
+    .nav-dropdown a {
+        padding: 0.7rem;
+        border-radius: 50%;
+        display: flex;
+        color: #fff;
+        font-size: 0.8rem;
+    }
+
+    .nav-button:hover {
+        background: #49453e;
+        color: #fff;
+    }
+
+    /* Add styles for the dropdown links */
+    .nav-dropdown a:hover {
+        background: #ac9e8d;
+        color: #9d9f9d;
+    }
+}
