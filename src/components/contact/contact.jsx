@@ -46,7 +46,7 @@ const Contact = () => {
             <MdWhatsapp className='contact__option-icon' />
             <h4>WhatsApp</h4>
             <h3>+91 9310298828</h3>
-            {/* <a href="https://api.whatsapp.com/send?+919310298828" target='_blank' rel='noreferrer'>Send a message</a> */}
+            <a href="https://api.whatsapp.com/send?+919310298828" target='_blank' rel='noreferrer'>Send a message</a> 
           </article>
         </div>
 
