@@ -38,17 +38,17 @@ const Contact = () => {
           <article className="contact__option">
             <MdOutlineMailOutline className='contact__option-icon' />
             <h4>Email</h4>
-            <h3>anandkhushi0911@gmail.com</h3>
+            <h3>anandkhushi0911@gmail.com</h3> 
             <a href="mailto:anandkhushi0911@gmail.com" target='_blank' rel='noreferrer'>Send a message</a>
           </article>
 
           <article className="contact__option">
             <MdWhatsapp className='contact__option-icon' />
             <h4>WhatsApp</h4>
-            <h3>+91 9310298828</h3>
-            <a href="https://api.whatsapp.com/send?phone=919310298828" target='_blank' rel='noreferrer'>
+            <a href="https://api.whatsapp.com/send?phone=919310298828" target='_blank' rel='noreferrer'> <h3>+91 9310298828</h3> </a>
+{/*             <a href="https://api.whatsapp.com/send?phone=919310298828" target='_blank' rel='noreferrer'>
               Send a message
-            </a>
+            </a> */}
           </article>
         </div>
 
